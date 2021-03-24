@@ -6,6 +6,13 @@ body{
   position: relative;
   overflow-x: hidden;
 }
+body{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text;
+}
 *,
 *::before,
 *::after{
@@ -14,10 +21,38 @@ body{
 a{
   display: inline-block;
   color: inherit;
+  height: fit-content;
+  text-decoration: none;
 }
 ul,
 li{
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.title{
+  color: $title;
+  font-size: 30px;
+  line-height: 1.06;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.titleS{
+  color: $title;
+  font-size: 18px;
+  line-height: 20px;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  font-weight: 500;
+}
+.link{
+  font-size: 15px;
+  line-height: 20px;
+  color: $blue;
+  font-weight: 700;
+}
+.container{
+  max-width: 1016px;
+  margin: 0 auto;
+  padding: 0 24px;
 }

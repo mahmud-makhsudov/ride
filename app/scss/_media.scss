@@ -1,0 +1,241 @@
+@media (max-width: 990px) {
+  .header__profile{
+    display: none;
+  }
+  .header__btn-text{
+    display: none;
+  }
+  .header__item{
+    display: none;
+  }
+  .header__profile-username{
+    display: none;
+  }
+  .header__profile--mobile{
+    display: flex;
+  }
+  .header__logo--mobile{
+    display: block;
+  }
+  .header__logo{
+    display: none;
+  }
+  .header__btn + .header__btn{
+    margin-right: 0;
+  }
+  .header__profile-img, .header__profile-img img{
+    width: 25px;
+    height: 25px;
+  }
+  .header{
+    padding: 0 16px;
+    height: 56px;
+  }
+  .main-screen{
+    margin-top: 56px;
+  }
+  .main-screen__title{
+    font-size: 31px;
+  }
+  .main-screen__search{
+    display: block;
+    max-width: 717px;
+    width: 100%;
+    height: 242px;
+    padding: 8px 24px 0px;
+    border: 1px solid #ddd;
+  }
+  .main-screen__search-buttons{
+    flex-direction: column;
+    height: auto;
+  }
+  .main-screen__search-buttons button{
+    padding: 16px 0;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    color: rgb(112, 140, 145);
+    line-height: 24px;
+    align-items: center;
+  }
+  .main-screen__search-buttons button+button{
+    border-left: none;
+  }
+  .main-screen__search-btn{
+    width: 100%;
+    border-radius: 0;
+  }
+  .main-screen__btn-right{
+    display: flex;
+    flex-direction: unset;
+    border-left: none;
+    padding: 8px 0;
+    button{
+      border-bottom: none;
+      padding: 8px 10px 8px 0;
+      color: $title;
+      font-weight: 700;
+      align-items: center;
+      display: flex;
+      & + button{
+        border-left: 1px solid #ddd;
+        padding-left: 10px;
+      }
+    }
+  }
+  .footer__content-inner{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__list{
+    column-count: 1;
+  }
+  .footer__item{
+    margin-left: 0;
+    width: 100%;
+  }
+  .footer__social{
+    justify-content: center;
+  }
+}
+@media (max-width: 880px) {
+  .plan__bottom-items{
+    display: block;
+  }
+  .plan-item{
+    max-width: 100%;
+    justify-content: space-between;
+    & + &{
+      margin-top: 7px;
+      margin-left: 0;
+    }
+  }
+  .plan-item__content{
+    max-width: 100%;
+    margin-right: 10px;
+  }
+  .plan-item__price{
+    flex-basis: auto;
+  }
+}
+@media (max-width: 840px) {
+  .plan__top-inner{
+    display: block;
+    text-align: center;
+  }
+  .plan__top-img {
+    min-height: auto;
+    max-width: 100%;
+    max-height: 250px;
+    margin-right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    margin-right: 0;
+    img{
+      height: auto;
+    }
+  }
+  .plan__content{
+    margin: 24px 0;
+  }
+} 
+@media (max-width: 800px) {
+  .popular-destinations__inner{
+    display: block;
+  }
+  .popular-destinations__col{
+    max-width: 100%;
+    &+&{
+      margin-left: 0;
+    }
+  }
+  .popular-destinations__item{
+    padding: 16px 12px;
+  }
+  .news{
+    display: none;
+  }
+  .section-buttons{
+    display: block;
+  }
+}
+@media (max-width: 700px) {
+  .howItWorks__top{
+    justify-content: center;
+  }
+  .howItWorks__more-details{
+    display: none;
+  }
+  .howItWorks__inner{
+    display: block;
+    margin-bottom: 24px;
+  }
+  .howItWorks__item{
+    max-width: 100%;
+    text-align: center;
+    & + &{
+      margin-left: 0;
+      margin-top: 24px;
+    }
+  }
+  .why-we__inner{
+    display: block;
+  }
+  .why-we__item{
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 24px;
+    &+&{
+      margin-left: 0;
+    }
+  }
+  .advantages__inner{
+    display: block;
+  }
+  .advantages__img,
+  .advantages__content{
+    max-width: 100%;
+  }
+  .advantages__img{
+    min-height: auto;
+    margin-bottom: 24px;
+  }
+  .advantages__link{
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}  
+@media (max-width: 500px) {
+  .plan__top-title,
+  .plan__top-text{
+    text-align: start;
+  }
+  .title{
+    font-size: 20px;
+  }
+  body{
+    font-size: 15px;
+  }
+  .titleS{
+    font-size: 17px;
+  } 
+  .popular-destinations__item-text{
+    font-size: 15px;
+  }
+  .footer__bottom-text{
+    font-size: 11px !important;
+  }
+}
+@media (max-width: 400px) {
+  .main-screen__btn-right .button-text{
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 4px;
+    margin-left: 1px;
+  }
+}

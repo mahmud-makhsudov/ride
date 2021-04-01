@@ -1,4 +1,10 @@
 @media (max-width: 990px) {
+  .search{
+    top: 55px;
+  }
+  .best-routes{
+    margin-top: 130px;
+  }
   .header__profile{
     display: none;
   }
@@ -13,6 +19,12 @@
   }
   .header__profile--mobile{
     display: flex;
+  }
+  .profile-box{
+    right: auto;
+    left: -16px;
+    top: 45px;
+    min-width: 320px;
   }
   .header__logo--mobile{
     display: block;
@@ -31,7 +43,8 @@
     padding: 0 16px;
     height: 56px;
   }
-  .main-screen{
+  .main-screen,
+  .content{
     margin-top: 56px;
   }
   .main-screen__title{
@@ -165,6 +178,29 @@
   }
 }
 @media (max-width: 700px) {
+  .search{
+    position: static;
+  }
+  .routes-tab__item-text{
+    span{
+      display: none;
+    }
+    img{
+      margin-right: 0;
+    }
+  }
+  .routes__btn{
+    display: none;
+  }
+  .filter--mobile{
+    display: block;
+  }
+  .best-routes{
+    margin-top: 0;
+  }
+  .your-way__title{
+    padding: 0 0px 32px;
+  }
   .howItWorks__top{
     justify-content: center;
   }
@@ -210,13 +246,29 @@
     transform: translateX(-50%);
   }
 }  
+@media (max-width: 620px) {
+  .best-routes__inner{
+    flex-wrap: wrap;
+    .routes-item{
+      flex-basis: 100%;
+      & + .routes-item{
+        margin-left: 0;
+        margin-top: 8px;
+      }
+    }
+  }
+} 
 @media (max-width: 500px) {
   .plan__top-title,
   .plan__top-text{
     text-align: start;
   }
-  .title{
-    font-size: 20px;
+  .title,
+  .about__title{
+    font-size: 25px;
+  }
+  .about__line-additionally .about__line-label{
+    margin-left: 10px;
   }
   body{
     font-size: 15px;
@@ -232,10 +284,40 @@
   }
 }
 @media (max-width: 400px) {
+  .profile-page__tab{
+    padding: 16px 10px;
+  }
+  .search__inner{
+    padding: 0 10px;
+  }
+  .popular-destinations__item-text{
+    padding-right: 19px;
+    display: inline-block;
+    position: relative;
+    margin-right: 0px;
+  }
   .main-screen__btn-right .button-text{
     font-size: 12px;
     font-weight: 700;
     padding-bottom: 4px;
     margin-left: 1px;
+  }
+  .recommendation__title{
+    padding: 0;
+  }
+  .recommendation__inner .popular-destinations__item{
+    padding: 24px 0;
+  }
+  .routes-item__price{
+    min-width: auto;
+  }
+  .routes-item__text-wrapper{
+    font-size: 16px;
+  }
+  .routes-item__time{
+    min-width: 46px;
+  }
+  .line{
+    height: 84px;
   }
 }

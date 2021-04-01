@@ -30,6 +30,11 @@ li{
   padding: 0;
   list-style: none;
 }
+button{
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
 .title{
   color: $title;
   font-size: 30px;
@@ -53,6 +58,16 @@ li{
 }
 .container{
   max-width: 1016px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.content{
+  padding-top: 20px;
+  margin-top: 72px;
+}
+.container-min{
+  max-width: 662px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 24px;
 }

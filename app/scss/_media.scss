@@ -158,6 +158,9 @@
   }
 } 
 @media (max-width: 800px) {
+  .registration__list .border{
+    max-width: 615px;
+  }
   .popular-destinations__inner{
     display: block;
   }
@@ -167,14 +170,17 @@
       margin-left: 0;
     }
   }
-  .popular-destinations__item{
-    padding: 16px 12px;
-  }
   .news{
     display: none;
   }
   .section-buttons{
     display: block;
+  }
+  .container-reg{
+    padding: 0;
+  }
+  .about__title{
+    padding: 0 24px;
   }
 }
 @media (max-width: 700px) {
@@ -266,6 +272,7 @@
   .title,
   .about__title{
     font-size: 25px;
+    line-height: 25px;
   }
   .about__line-additionally .about__line-label{
     margin-left: 10px;

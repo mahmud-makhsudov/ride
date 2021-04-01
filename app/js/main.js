@@ -1,4 +1,11 @@
 const headerProfileWrapper = document.querySelectorAll('.header__profile-wrapper')
+const checkbox = document.querySelector('.checkbox')
+
+checkbox.addEventListener('click', check)
+
+function check() {
+  checkbox.classList.toggle('active')
+}
 
 function fnClick(item) {
   item.addEventListener('click', function () {
